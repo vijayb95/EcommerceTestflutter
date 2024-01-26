@@ -2,12 +2,12 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:smart_shop/Common/Widgets/app_button.dart';
-import 'package:smart_shop/Common/Widgets/cart_tile.dart';
-import 'package:smart_shop/Common/Widgets/custom_app_bar.dart';
-import 'package:smart_shop/Screens/CheckOut/check_out.dart';
-import 'package:smart_shop/Utils/app_colors.dart';
-import 'package:smart_shop/Utils/font_styles.dart';
+import 'package:smart_shop/common/Widgets/app_button.dart';
+import 'package:smart_shop/common/Widgets/cart_tile.dart';
+import 'package:smart_shop/common/Widgets/custom_app_bar.dart';
+import 'package:smart_shop/screens/CheckOut/check_out.dart';
+import '../../utils/app_colors.dart';
+import '../../utils/font_styles.dart';
 
 class Cart extends StatelessWidget {
   static const String routeName = 'cart';
@@ -32,9 +32,7 @@ class Cart extends StatelessWidget {
         title: 'Cart',
         fixedHeight: 88.0.h,
         enableSearchField: false,
-        leadingIcon:  Platform.isIOS
-            ? Icons.arrow_back_ios
-            : Icons.arrow_back,
+        leadingIcon: Platform.isIOS ? Icons.arrow_back_ios : Icons.arrow_back,
         leadingOnTap: () {
           Navigator.pop(context);
         },

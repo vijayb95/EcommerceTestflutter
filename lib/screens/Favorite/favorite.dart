@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:smart_shop/Common/Widgets/custom_app_bar.dart';
-import 'package:smart_shop/Common/Widgets/item_widget.dart';
-import 'package:smart_shop/Screens/Product/product.dart';
-import 'package:smart_shop/Utils/app_colors.dart';
-import 'package:smart_shop/Utils/font_styles.dart';
+import 'package:smart_shop/common/Widgets/custom_app_bar.dart';
+import 'package:smart_shop/common/Widgets/item_widget.dart';
+import 'package:smart_shop/screens/Product/product.dart';
+import '../../utils/app_colors.dart';
+import '../../utils/font_styles.dart';
 
 class Favorite extends StatefulWidget {
   static const String routeName = 'filter';
@@ -33,7 +33,7 @@ class _FavoriteState extends State<Favorite> {
         title: 'Favorite',
         fixedHeight: 88.0.h,
         enableSearchField: false,
-       // leadingIcon: Icons.arrow_back,
+        // leadingIcon: Icons.arrow_back,
         leadingOnTap: () {
           Navigator.pop(context);
         },
@@ -95,8 +95,7 @@ class _FavoriteState extends State<Favorite> {
         itemBuilder: (_, index) {
           return GestureDetector(
             onTap: () {
-              Navigator.pushNamed(context, Product.routeName,
-                  arguments: index);
+              Navigator.pushNamed(context, Product.routeName, arguments: index);
             },
             child: ItemWidget(
               index: index,

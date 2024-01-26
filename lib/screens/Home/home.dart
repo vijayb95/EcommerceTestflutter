@@ -2,20 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:flutter_carousel_slider/carousel_slider.dart';
 import 'package:flutter_carousel_slider/carousel_slider_indicators.dart';
 import 'package:flutter_carousel_slider/carousel_slider_transforms.dart';
-import 'package:smart_shop/Common/Widgets/app_title.dart';
-import 'package:smart_shop/Common/Widgets/catalogue_widget.dart';
-import 'package:smart_shop/Common/Widgets/custom_app_bar.dart';
-import 'package:smart_shop/Common/Widgets/item_widget.dart';
-import 'package:smart_shop/Screens/Catalogue/catalogue.dart';
-import 'package:smart_shop/Screens/Notifications/notifications.dart';
-import 'package:smart_shop/Screens/Onboarding/onboarding.dart';
-import 'package:smart_shop/Screens/Product/product.dart';
-import 'package:smart_shop/Screens/Settings/settings.dart';
-import 'package:smart_shop/Utils/app_colors.dart';
-import 'package:smart_shop/Utils/font_styles.dart';
+import 'package:smart_shop/common/Widgets/app_title.dart';
+import 'package:smart_shop/common/Widgets/catalogue_widget.dart';
+import 'package:smart_shop/common/Widgets/custom_app_bar.dart';
+import 'package:smart_shop/common/Widgets/item_widget.dart';
+import 'package:smart_shop/screens/Catalogue/catalogue.dart';
+import 'package:smart_shop/screens/Notifications/notifications.dart';
+import 'package:smart_shop/screens/Onboarding/onboarding.dart';
+import 'package:smart_shop/screens/Product/product.dart';
+import 'package:smart_shop/screens/Settings/settings.dart';
+import '../../utils/app_colors.dart';
+import '../../utils/font_styles.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:smart_shop/dummy/dummy_data.dart';
-import 'package:smart_shop/Common/Widgets/shimmer_effect.dart';
+import 'package:smart_shop/common/Widgets/shimmer_effect.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class Home extends StatefulWidget {
@@ -32,7 +32,6 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       key: _key,
       appBar: _buildCustomAppBar(context),
       drawer: _buildDrawer(context),
@@ -207,7 +206,8 @@ class _HomeState extends State<Home> {
   Widget _buildCatalogue() {
     return GestureDetector(
       onTap: () {
-        Navigator.pushNamed(context, Catalogue.routeName, arguments: [true,true]);
+        Navigator.pushNamed(context, Catalogue.routeName,
+            arguments: [true, true]);
       },
       child: Container(
         margin: EdgeInsets.only(

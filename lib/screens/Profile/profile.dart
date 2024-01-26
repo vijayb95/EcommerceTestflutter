@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:smart_shop/Common/Widgets/gradient_header.dart';
-import 'package:smart_shop/Screens/Onboarding/onboarding.dart';
-import 'package:smart_shop/Screens/Orders/order.dart';
-import 'package:smart_shop/Screens/PrivacyPolicy/privacy_policy.dart';
-import 'package:smart_shop/Screens/Settings/settings.dart';
-import 'package:smart_shop/Screens/ShippingAddress/shipping_address.dart';
-import 'package:smart_shop/Screens/SignUp/sign_up.dart';
-import 'package:smart_shop/Utils/app_colors.dart';
-import 'package:smart_shop/Utils/font_styles.dart';
+import 'package:smart_shop/common/Widgets/gradient_header.dart';
+import 'package:smart_shop/screens/Onboarding/onboarding.dart';
+import 'package:smart_shop/screens/Orders/order.dart';
+import 'package:smart_shop/screens/PrivacyPolicy/privacy_policy.dart';
+import 'package:smart_shop/screens/Settings/settings.dart';
+import 'package:smart_shop/screens/ShippingAddress/shipping_address.dart';
+import 'package:smart_shop/screens/SignUp/sign_up.dart';
+import '../../utils/app_colors.dart';
+import '../../utils/font_styles.dart';
 
 class Profile extends StatelessWidget {
   static const String routeName = 'profile';

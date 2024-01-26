@@ -1,19 +1,19 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:smart_shop/Common/Widgets/app_button.dart';
-import 'package:smart_shop/Common/Widgets/cart_tile.dart';
-import 'package:smart_shop/Common/Widgets/item_widget.dart';
-import 'package:smart_shop/Common/Widgets/shimmer_effect.dart';
-import 'package:smart_shop/Utils/app_colors.dart';
-import 'package:smart_shop/Utils/font_styles.dart';
+import 'package:smart_shop/common/Widgets/app_button.dart';
+import 'package:smart_shop/common/Widgets/cart_tile.dart';
+import 'package:smart_shop/common/Widgets/item_widget.dart';
+import 'package:smart_shop/common/Widgets/shimmer_effect.dart';
+import '../../utils/app_colors.dart';
+import '../../utils/font_styles.dart';
 import 'package:smart_shop/dummy/dummy_data.dart';
 
 // ignore: must_be_immutable
 class Product extends StatelessWidget {
   static const String routeName = 'product';
   Product({Key? key}) : super(key: key);
-   int index = 0;
+  int index = 0;
   @override
   Widget build(BuildContext context) {
     if (ModalRoute.of(context)!.settings.arguments != null) {

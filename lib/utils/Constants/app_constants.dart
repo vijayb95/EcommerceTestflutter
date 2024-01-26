@@ -1,24 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:smart_shop/Screens/Cart/cart.dart';
-import 'package:smart_shop/Screens/Catalogue/catalogue.dart';
-import 'package:smart_shop/Screens/CheckOut/check_out.dart';
-import 'package:smart_shop/Screens/Favorite/favorite.dart';
-import 'package:smart_shop/Screens/Filter/filter.dart';
-import 'package:smart_shop/Screens/Home/home.dart';
-import 'package:smart_shop/Screens/Items/items.dart';
-import 'package:smart_shop/Screens/Login/phone_screen.dart';
-import 'package:smart_shop/Screens/Login/verification_screen.dart';
-import 'package:smart_shop/Screens/Main/main.dart';
-import 'package:smart_shop/Screens/Notifications/notifications.dart';
-import 'package:smart_shop/Screens/Onboarding/onboarding.dart';
-import 'package:smart_shop/Screens/Orders/order.dart';
-import 'package:smart_shop/Screens/PrivacyPolicy/privacy_policy.dart';
-import 'package:smart_shop/Screens/Product/product.dart';
-import 'package:smart_shop/Screens/Profile/profile.dart';
-import 'package:smart_shop/Screens/Settings/settings.dart';
-import 'package:smart_shop/Screens/ShippingAddress/shipping_address.dart';
-import 'package:smart_shop/Screens/SignUp/sign_up.dart';
+import '../../screens/Cart/cart.dart';
+import '../../screens/Catalogue/catalogue.dart';
+import '../../screens/CheckOut/check_out.dart';
+import '../../screens/Favorite/favorite.dart';
+import '../../screens/Filter/filter.dart';
+import '../../screens/Home/home.dart';
+import '../../screens/Items/items.dart';
+import '../../screens/Login/phone_screen.dart';
+import '../../screens/Login/verification_screen.dart';
+import '../../screens/Main/main.dart';
+import '../../screens/Notifications/notifications.dart';
+import '../../screens/Onboarding/onboarding.dart';
+import '../../screens/Orders/order.dart';
+import '../../screens/PrivacyPolicy/privacy_policy.dart';
+import '../../screens/Product/product.dart';
+import '../../screens/Profile/profile.dart';
+import '../../screens/Settings/settings.dart';
+import '../../screens/ShippingAddress/shipping_address.dart';
+import '../../screens/SignUp/sign_up.dart';
 
 class AppConstants {
   static Map<String, Widget Function(dynamic)> appRoutes = {

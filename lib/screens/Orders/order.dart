@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:smart_shop/Common/Widgets/custom_app_bar.dart';
-import 'package:smart_shop/Common/Widgets/item_widget.dart';
-import 'package:smart_shop/Utils/app_colors.dart';
-import 'package:smart_shop/Utils/font_styles.dart';
+import 'package:smart_shop/common/Widgets/custom_app_bar.dart';
+import 'package:smart_shop/common/Widgets/item_widget.dart';
+import '../../utils/app_colors.dart';
+import '../../utils/font_styles.dart';
 
 class Orders extends StatefulWidget {
   static const String routeName = 'orders';
@@ -98,7 +98,7 @@ class _OrdersState extends State<Orders> {
           shrinkWrap: true,
           itemBuilder: (context, index) {
             return Padding(
-              padding: const EdgeInsets.only(right:18.0),
+              padding: const EdgeInsets.only(right: 18.0),
               child: ItemWidget(
                 index: index,
                 favoriteIcon: false,

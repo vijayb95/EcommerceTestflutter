@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:smart_shop/Utils/app_colors.dart';
-import 'package:smart_shop/Utils/font_styles.dart';
+import '../../utils/app_colors.dart';
+import '../../utils/font_styles.dart';
 import 'app_title.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

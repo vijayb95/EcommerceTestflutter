@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:smart_shop/Screens/Cart/cart.dart';
-import 'package:smart_shop/Screens/Catalogue/catalogue.dart';
-import 'package:smart_shop/Screens/Favorite/favorite.dart';
-import 'package:smart_shop/Screens/Home/home.dart';
-import 'package:smart_shop/Screens/Profile/profile.dart';
-import 'package:smart_shop/Utils/app_colors.dart';
-import 'package:smart_shop/Utils/font_styles.dart';
+import 'package:smart_shop/screens/Cart/cart.dart';
+import 'package:smart_shop/screens/Catalogue/catalogue.dart';
+import 'package:smart_shop/screens/Favorite/favorite.dart';
+import 'package:smart_shop/screens/Home/home.dart';
+import 'package:smart_shop/screens/Profile/profile.dart';
+import '../../utils/app_colors.dart';
+import '../../utils/font_styles.dart';
 
 class Main extends StatefulWidget {
   const Main({Key? key}) : super(key: key);
@@ -220,13 +220,10 @@ class _MainState extends State<Main> {
                 height: 56,
                 decoration: const BoxDecoration(
                   gradient: LinearGradient(
-                    colors:  [
-                      AppColors.primaryLight,
-                      AppColors.primaryDark
-                    ],
+                    colors: [AppColors.primaryLight, AppColors.primaryDark],
                     end: Alignment.bottomLeft,
                     begin: Alignment.topRight,
-                    stops:  [0, 1],
+                    stops: [0, 1],
                   ),
                   color: AppColors.primaryDark,
                   borderRadius: BorderRadius.only(

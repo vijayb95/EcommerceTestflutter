@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:smart_shop/Utils/app_colors.dart';
+import '../../utils/app_colors.dart';
 
 class AppTheme {
   static ColorScheme light = const ColorScheme.light(
@@ -8,12 +8,11 @@ class AppTheme {
     onPrimary: AppColors.white,
     onSecondary: AppColors.white,
     background: AppColors.whiteLight,
-
   );
 
   static ThemeData lightTheme = ThemeData(
     colorScheme: AppTheme.light,
-    scaffoldBackgroundColor:AppColors.whiteLight,
+    scaffoldBackgroundColor: AppColors.whiteLight,
     bottomSheetTheme: const BottomSheetThemeData(
       backgroundColor: AppColors.white,
       shape: OutlineInputBorder(

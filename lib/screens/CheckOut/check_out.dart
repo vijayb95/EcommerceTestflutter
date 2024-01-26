@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:smart_shop/Common/Widgets/app_button.dart';
-import 'package:smart_shop/Common/Widgets/custom_app_bar.dart';
-import 'package:smart_shop/Screens/Orders/order.dart';
-import 'package:smart_shop/Utils/app_colors.dart';
-import 'package:smart_shop/Utils/font_styles.dart';
+import 'package:smart_shop/common/Widgets/app_button.dart';
+import 'package:smart_shop/common/Widgets/custom_app_bar.dart';
+import 'package:smart_shop/screens/Orders/order.dart';
+import '../../utils/app_colors.dart';
+import '../../utils/font_styles.dart';
 
 class CheckOut extends StatelessWidget {
   static const String routeName = 'checkout';
@@ -71,7 +71,7 @@ class CheckOut extends StatelessWidget {
   Widget _buildDeliveryMethod(BuildContext context) {
     var screenHeight = MediaQuery.of(context).size.height;
     return Container(
-      margin:  EdgeInsets.symmetric(horizontal: 20.0.h),
+      margin: EdgeInsets.symmetric(horizontal: 20.0.h),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

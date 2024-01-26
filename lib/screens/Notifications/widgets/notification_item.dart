@@ -1,9 +1,9 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
-import 'package:smart_shop/Common/Widgets/shimmer_effect.dart';
-import 'package:smart_shop/Utils/app_colors.dart';
-import 'package:smart_shop/Utils/font_styles.dart';
+import 'package:smart_shop/common/Widgets/shimmer_effect.dart';
+import 'package:smart_shop/utils/app_colors.dart';
+import 'package:smart_shop/utils/font_styles.dart';
 
 // ignore: must_be_immutable
 class NotificationItem extends StatefulWidget {
@@ -16,12 +16,13 @@ class NotificationItem extends StatefulWidget {
 
   NotificationItem(
       {Key? key,
-        this.notificationImage,
+      this.notificationImage,
       this.notificationMessage,
       this.notificationTimestamp,
       this.onPressed,
       this.seen,
-      this.isImageAvailable}): super(key: key);
+      this.isImageAvailable})
+      : super(key: key);
   @override
   _NotificationItemState createState() => _NotificationItemState();
 }
@@ -42,33 +43,33 @@ class _NotificationItemState extends State<NotificationItem> {
           children: <Widget>[
             widget.isImageAvailable!
                 ? CachedNetworkImage(
-                  imageUrl: widget.notificationImage ?? "",
-                  placeholder: (context, url) => const Center(
-                    child:  ShimmerEffect(
-                      height: 48,
-                      width: 48,
-                      isCircular: true,
-                    ),
-                  ),
-                  errorWidget: (context, url, error) => const Center(
-                    child: ShimmerEffect(
-                      height: 48,
-                      width: 48,
-                      isCircular: true,
-                    ),
-                  ),
-                  imageBuilder: (context, imageProvider) => Container(
-                    height: 48,
-                    width: 48,
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      image: DecorationImage(
-                        image: imageProvider,
-                        fit: BoxFit.cover,
+                    imageUrl: widget.notificationImage ?? "",
+                    placeholder: (context, url) => const Center(
+                      child: ShimmerEffect(
+                        height: 48,
+                        width: 48,
+                        isCircular: true,
                       ),
                     ),
-                  ),
-                )
+                    errorWidget: (context, url, error) => const Center(
+                      child: ShimmerEffect(
+                        height: 48,
+                        width: 48,
+                        isCircular: true,
+                      ),
+                    ),
+                    imageBuilder: (context, imageProvider) => Container(
+                      height: 48,
+                      width: 48,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        image: DecorationImage(
+                          image: imageProvider,
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ),
+                  )
                 : Container(),
             Expanded(
               child: Column(

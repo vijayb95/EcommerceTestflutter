@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:smart_shop/Common/Widgets/app_button.dart';
-import 'package:smart_shop/Common/Widgets/gradient_header.dart';
-import 'package:smart_shop/Screens/Login/verification_screen.dart';
-import 'package:smart_shop/Screens/Login/widgets/international_input_field.dart';
-import 'package:smart_shop/Utils/app_colors.dart';
-import 'package:smart_shop/Utils/font_styles.dart';
+import 'package:smart_shop/common/Widgets/app_button.dart';
+import 'package:smart_shop/common/Widgets/gradient_header.dart';
+import 'package:smart_shop/screens/Login/verification_screen.dart';
+import 'package:smart_shop/screens/Login/widgets/international_input_field.dart';
+import '../../utils/app_colors.dart';
+import '../../utils/font_styles.dart';
 
 class Login extends StatelessWidget {
   static String routeName = 'login';

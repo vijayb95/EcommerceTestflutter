@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:smart_shop/Common/Widgets/app_button.dart';
-import 'package:smart_shop/Common/Widgets/app_text_field.dart';
-import 'package:smart_shop/Common/Widgets/gradient_header.dart';
-import 'package:smart_shop/Screens/Main/main.dart';
-import 'package:smart_shop/Utils/app_colors.dart';
-import 'package:smart_shop/Utils/font_styles.dart';
+import 'package:smart_shop/common/Widgets/app_button.dart';
+import 'package:smart_shop/common/Widgets/app_text_field.dart';
+import 'package:smart_shop/common/Widgets/gradient_header.dart';
+import 'package:smart_shop/screens/Main/main.dart';
+import '../../utils/app_colors.dart';
+import '../../utils/font_styles.dart';
 
 class SignUp extends StatelessWidget {
   static const String routeName = 'signup';
@@ -106,8 +106,7 @@ class SignUp extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(
                     horizontal: 20.0, vertical: 10.0),
                 child: ListTile(
-                  onTap: () {
-                  },
+                  onTap: () {},
                   leading: const Icon(Icons.settings_rounded),
                   title: const Text('From gallery'),
                 ),
@@ -115,8 +114,7 @@ class SignUp extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20.0),
                 child: ListTile(
-                  onTap: () {
-                  },
+                  onTap: () {},
                   leading: const Icon(Icons.camera_alt_outlined),
                   title: const Text('From Camera'),
                 ),

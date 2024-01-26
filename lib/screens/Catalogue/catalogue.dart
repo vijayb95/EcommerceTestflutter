@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:smart_shop/Common/Widgets/catalogue_widget.dart';
-import 'package:smart_shop/Common/Widgets/item_widget.dart';
-import 'package:smart_shop/Common/Widgets/custom_app_bar.dart';
-import 'package:smart_shop/Screens/Filter/filter.dart';
-import 'package:smart_shop/Utils/app_colors.dart';
-import 'package:smart_shop/Utils/font_styles.dart';
+import 'package:smart_shop/common/Widgets/catalogue_widget.dart';
+import 'package:smart_shop/common/Widgets/item_widget.dart';
+import 'package:smart_shop/common/Widgets/custom_app_bar.dart';
+import 'package:smart_shop/screens/Filter/filter.dart';
+import '../../utils/app_colors.dart';
+import '../../utils/font_styles.dart';
 import 'package:smart_shop/dummy/dummy_data.dart';
 import 'dart:io' as plateform;
 
@@ -30,7 +30,6 @@ class _CatalogueState extends State<Catalogue> {
       argList = ModalRoute.of(context)!.settings.arguments as List<bool>;
       seeAllClicked = argList![0];
       showbackArrow = argList![1];
-
     }
 
     return Scaffold(
@@ -51,9 +50,11 @@ class _CatalogueState extends State<Catalogue> {
           isHome: false,
           // fixedHeight: 50.0,
           enableSearchField: true,
-          leadingIcon: showbackArrow ? plateform.Platform.isIOS
-              ? Icons.arrow_back_ios
-              : Icons.arrow_back : null,
+          leadingIcon: showbackArrow
+              ? plateform.Platform.isIOS
+                  ? Icons.arrow_back_ios
+                  : Icons.arrow_back
+              : null,
           leadingOnTap: () {
             setState(() {
               isItemClicked = false;
@@ -318,7 +319,7 @@ class _CatalogueState extends State<Catalogue> {
         shrinkWrap: true,
         itemCount: 4,
         physics: const NeverScrollableScrollPhysics(),
-        gridDelegate:  SliverGridDelegateWithFixedCrossAxisCount(
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2, mainAxisExtent: 260.0.h, crossAxisSpacing: 10.0),
         itemBuilder: (_, index) {
           return ItemWidget(

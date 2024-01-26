@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:smart_shop/Utils/app_colors.dart';
+import '../../utils/app_colors.dart';
 
 class AppTitle extends StatelessWidget {
   const AppTitle({this.marginTop, Key? key, this.fontStyle}) : super(key: key);

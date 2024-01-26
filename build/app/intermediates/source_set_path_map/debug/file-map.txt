@@ -1,0 +1,15 @@
+commy.smart_shop.app-jetified-annotation-experimental-1.1.0-0 /home/user/.gradle/caches/transforms-3/2f884fd6ad75595eb0c71dbb018d7688/transformed/jetified-annotation-experimental-1.1.0/res
+commy.smart_shop.app-jetified-window-1.0.0-beta04-1 /home/user/.gradle/caches/transforms-3/30bec41e7562bea2cafbbbd56a180251/transformed/jetified-window-1.0.0-beta04/res
+commy.smart_shop.app-core-1.6.0-2 /home/user/.gradle/caches/transforms-3/7a453608284c91486d1e5de2b3c9ad64/transformed/core-1.6.0/res
+commy.smart_shop.app-jetified-window-java-1.0.0-beta04-3 /home/user/.gradle/caches/transforms-3/dd1e653eaeb02fbe01ca8f2388958afe/transformed/jetified-window-java-1.0.0-beta04/res
+commy.smart_shop.app-debug-4 /home/user/EcommerceTestflutter/android/app/src/debug/res
+commy.smart_shop.app-main-5 /home/user/EcommerceTestflutter/android/app/src/main/res
+commy.smart_shop.app-pngs-6 /home/user/EcommerceTestflutter/build/app/generated/res/pngs/debug
+commy.smart_shop.app-resValues-7 /home/user/EcommerceTestflutter/build/app/generated/res/resValues/debug
+commy.smart_shop.app-rs-8 /home/user/EcommerceTestflutter/build/app/generated/res/rs/debug
+commy.smart_shop.app-mergeDebugResources-9 /home/user/EcommerceTestflutter/build/app/intermediates/incremental/debug/mergeDebugResources/merged.dir
+commy.smart_shop.app-mergeDebugResources-10 /home/user/EcommerceTestflutter/build/app/intermediates/incremental/debug/mergeDebugResources/stripped.dir
+commy.smart_shop.app-merged_res-11 /home/user/EcommerceTestflutter/build/app/intermediates/merged_res/debug
+commy.smart_shop.app-packaged_res-12 /home/user/EcommerceTestflutter/build/libphonenumber_plugin/intermediates/packaged_res/debug
+commy.smart_shop.app-packaged_res-13 /home/user/EcommerceTestflutter/build/path_provider_android/intermediates/packaged_res/debug
+commy.smart_shop.app-packaged_res-14 /home/user/EcommerceTestflutter/build/sqflite/intermediates/packaged_res/debug
